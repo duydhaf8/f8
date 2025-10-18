@@ -1,0 +1,44 @@
+về cấu tạo:
+    thẻ đủ: đầy đủ cặp thẻ đóng - mở
+    EX: html, body
+    thẻ rỗng: ko có thẻ đóng
+    EX: meta
+
+về tính chất:
+    - block: là 1 block chiếm 100% viewport
+    Ex:
+        div
+        h1 -> h6
+        p
+    - inline: dùng đến đâu thì rộng đến đấy, nếu dài hơn viewport thì tự xuống dòng
+    Ex:
+        span
+        br
+        img
+
+
+về mặt SEO: div, span ko có ý nghĩa j
+    div:
+        ko có ý nghĩa j về SEO, ko có ngữ nghĩa (google đọc ko hỉu)
+        gôm nhóm các thành phần lại vs nhau
+    span:
+        ko có ý nghĩa j về SEO, ko có ngữ nghĩa
+
+    heading: là các thẻ block
+     h1, h2, h3, h4, h5, h6
+     nhấn mạnh thông tin:
+        h1: mạnh nhất, 1 page chỉ nên có 1 thẻ h1, có thể có nhìu thẻ h2, h3,h4 ,h5, h6
+        ko đc nhảy cóc
+        Ex: h1 -> h3 (sai), h3 -> h6 (sai)
+
+    p: là thẻ block, sử dụng để triển khai 1 đoạn văn bản, có khoảng cách nhất định
+
+    br: thẻ xuống dòng trong 1 đoạn văn, là thẻ inline
+    -> chỉ nên nằm trong thẻ p
+
+    img: hiển thị ảnh, thẻ rỗng (self-closing)
+        src: đường dẫn ảnh
+        alt: gợi ý hình ảnh (nếu ảnh lỗi thì hiển thị)
+        width: chiều rộng ảnh
+        height: chiều cao ảnh
+        title: tiêu đề ảnh
