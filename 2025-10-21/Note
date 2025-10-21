@@ -1,0 +1,23 @@
+a: thẻ điều hướng
+attribute:
+    href: required (nhúng đường link vào)
+    thẻ inline
+<p><a></a></p> a là thẻ con trực tiếp của p
+p
+    a
+html:
+<p>để hc lập trình tốt thì hãy xem ở  <a href = "https://www.youtube.com/watch?v=tj4k33OMkC4&list=RDtj4k33OMkC4&start_radio=1">đây<a> </p>
+
+<p>
+    <span>
+        <a></a>
+    </span>
+</p>
+==> ko phải con trực típ
+
+ul/li
+    thẻ danh sách
+    là thẻ block
+ol/li -> order(sắp xếp)
+    thẻ danh sách đc sắp xếp
+    là thẻ block

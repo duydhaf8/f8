@@ -40,11 +40,22 @@
      alt="day la hinh anh"
      title="anh tum lum"
 >
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0VB8LDVASHuc3q2j5G2zspMgUTDoZOB_ow&s"
-     width="400px"
-     height="200px"
-     alt="day la hinh anh"
-     title="anh tum lum"
->
+<!--phải cho ảnh cùng folder code-->
+<!--http://localhost:63342/f8/2025-10-21/test%20img.jpg đây là link ảnh của code shau khi chạy trên browser
+    ---------------------  -------------------------
+            Domain                      path
+src="test%20img.jpg" => http://localhost:63342/f8/2025-10-21/test%20img.jpg
+nếu khác folder phải sửa đường dẫn
+-->
+
+<img src="../test%20img.jpg" alt="day la hinh anh" title="anh tum lum">
+<!-- nếu ảnh ở folder cùng cấp với file code thì cần thêm ../ ở trc ../ là back ra folder trc so vs folder chứa file code
+../../ để back ra 2 folder
+cách 2: dẫn từ root(f8) dấu "/" để gọi root => src: /test%20img.jpg
+nếu 2 file cùng folder thì nên xài cách 1, nếu khác folder thì xài cách 2
+==> khi đường dẫn thay đổi tùy theo vị trí (cách 1) gọi là đường dẫn tương đối, đg dẫn ko thay đổi kể cả vị trí file có như nào thì là đg dẫn tuyệt đối -->
+
+
+
 </body>
 </html>

@@ -42,3 +42,6 @@ về mặt SEO: div, span ko có ý nghĩa j
         width: chiều rộng ảnh
         height: chiều cao ảnh
         title: tiêu đề ảnh
+    các ảnh có khoảng cách trái phải do: do xuống xòng trong code
+    có khoảng cách trái phải do: do img là 1 thẻ inline -> text
+    => nếu mún làm mất khoảng trắng -> đưa vể ko phải inline (block) (học trong css)
