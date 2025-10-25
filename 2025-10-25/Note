@@ -1,0 +1,40 @@
+- i,b, strong
+i:
+in nghiêng, ko có ngữ nghĩa
+thẻ đủ
+
+em
+giống thẻ i về hình thức nhưng có ngữ nghĩa, ý nghĩa nhấn mạnh
+
+b:
+in đậm, ko có ngữ nghĩa
+thẻ đủ
+
+strong:
+giống thẻ b về hình thức nhưng có ngữ nghĩa, ý nghĩa nhấn mạnh
+
+mark:
+bôi đậm
+
+ins:
+gạch chân
+
+del:
+gạch ngang chữ
+
+
+li khi nằm trong thẻ i, mang 1 số tính chất của thẻ cha ==> số 3 in nghiêng
+==> thẻ bên trong sẽ mang tính chất của thẻ bên ngoài
+
+- table
+table - bảng - board
+    hàng tr:table row
+    cột td: table data
+
+    border="1" cellspacing="0" width="100%" (ko dùng) -> dùng css
+    các attribute hay dùng:
+    align: center, left, right
+    colspan: gộp cột
+    rowspan: gộp hàng
+
+- form, input
