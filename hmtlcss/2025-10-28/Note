@@ -1,0 +1,35 @@
+form/button/input/label/select-option
+- input
+placeholder: xem ô đấy nhập cái gì
+value: giá trị phải điền
+name: tên của input
+type:
+    text: type mặc định
+    password: hiển thị * thay vì raw value (giá trị thô)
+    number: nhập số
+    email: nhập emil
+    type: submit nút bấm, khi bấm vào đây thì verify đc email, check có @ ko
+- form
+    method: phương thức (post/get/put/patch)
+    action: hành động
+điều kiện:
+    - thẻ form phải có action + method, nếu ko truyền method thì mặc định là GET
+    - input type là submit
+hành động:
+    - khi bấm nút submit thì dữ liệu sẽ đc gửi đến link trong action với method đã đc định nghĩa
+- get và post
+get: dữ liệu đc gửi qua url
+    hạn chế: limit data gửi lên và kém bảo mật hơn
+    => method mặc định của trình duyệt
+post/put/patch: dữ liệu ko đc gửi qua url
+
+- select-option
+    hiển thị 1 danh sách chọn sẵn
+    neu thẻ option ko có value thì value value sẽ là text hiển thị trong thẻ option
+    nếu có value thì giá trị chính là value
+
+====================================================================================================================================
+-css: tất cả các thẻ html đều có css mặc định
+    có 3 cách viết css:
+        - inline css: viết trong attribute style
+
