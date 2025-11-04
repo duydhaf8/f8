@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /* tên thẻ */
+        h1 {
+            color: red;
+        }
+
+        /* class */
+        .class-h1 {
+            color: green;
+        }
+
+        #id1 {
+            color: blue;
+        }
+
+        ul
+        {
+            color: blue;
+        }
+        li{
+            color: red;
+        }
+        div
+        {
+            color: purple
+        }
+        .grand ul{
+            color: black
+        }
+        .parents > ul{
+            color: pink
+        }
+    /*
+     .parent ul -> tất cả các thẻ bên trong bị ảnh hưởng
+     .parent > ul -> chỉ các thẻ con trực típ bị ảnh hưởng
+     */
+
+    </style>
+</head>
+<body>
+<h1 class="class-h1" id="id1">F8888888888</h1>
+<h1 class="class-h1" >F9999999999</h1>
+
+<div class="grand">
+    test div
+    <div class="parents">
+        <ul>
+            DS NVien
+            <li>Duong</li>
+            <li>Hoang</li>
+            <li>Anh</li>
+            <li>Duy</li>
+        </ul>
+    </div>
+</div>
+
+
+
+    <ul>
+        DS NgonNgu
+        <li>Python</li>
+        <li>Java</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+CSS: làm đẹp cho trang web
+Có 3 cách viết:
+    - inline css: viết trong attribute style
+    - internal: viết css trong cặp thẻ style
+    - external: viết 1 file css bên ngoài
+Cú pháp
+Selector
+{
+    css code
+}
+    selector có thể là
+        - tên thẻ vd: h1, h2,....
+        - id: mã định danh
+        - class
+=> độ bao phủ: tên thẻ>class>id
+=> độ ưu tiên: tên thẻ<class<id
+
+style của 1 thẻ sẽ bị ảnh hưởng bởi:
+    - inline
+    - internal
+    - external
+mức ảnh hưởng tỉ lệ nghịch với độ bao phủ
+=> độ ưu tiên: inline>internal>external
+=> độ bao phủ: inline<internal<external
+
+
+
