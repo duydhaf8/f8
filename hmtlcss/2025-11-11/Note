@@ -1,0 +1,6 @@
+các thẻ luôn có các thành phần như sau:
+    - content
+    - border: bọc ngoài content
+    - padding: nằm giữa content và border, ko nhận số âm
+=> background = padding + content
+    - margin: nằm ngoài border, khoảng cách giữa border

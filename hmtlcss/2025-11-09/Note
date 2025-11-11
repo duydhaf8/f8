@@ -1,0 +1,34 @@
+selector
+
+
+h1, p {
+    color: red;
+}
+
+-> h & p co chung css
+
+h1 + p: p dung canh h
+
+
+h1 ~ p {
+    color: red;
+}
+-> p cung cap, dung sau h
+
+input[name="name"] {
+    color: red;
+}
+-> nhung css co "name" la "name"
+
+de bai:
+    co 1 radio btn red, green, yellow
+    <p>doan van ...</p>
+    check red -> text do
+    check green -> green text
+    ....
+
+
+em: Đơn vị đo độ phần trăm của font-size của phần tử cha.
+rem: Đơn vị đo độ phần trăm của font-size của phần tử gốc (thường là phần tử <html>).
+
+background

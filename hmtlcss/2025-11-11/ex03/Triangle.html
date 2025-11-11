@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác cân ABC (CSS-only)</title>
+    <style>
+        body {
+          background: #f8f8f8;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: sans-serif;
+        }
+        .triangle {
+          position: relative;
+          width: 0;
+          height: 0;
+          margin-top: 60px;
+
+          /* Tam giác cân: 2 cạnh bên bằng nhau */
+          border-left: 150px solid transparent;
+          border-right: 150px solid transparent;
+          border-bottom: 250px solid #0a74da; /* màu tam giác */
+        }
+
+        /* Nhãn điểm */
+        .label {
+          position: absolute;
+          font-weight: bold;
+          color: #222;
+        }
+        .A { bottom: -25px; left: -155px; }  /* điểm A - góc trái */
+        .B { bottom: -25px; right: -155px; } /* điểm B - góc phải */
+        .C { top: -40px; left: -10px; }      /* điểm C - đỉnh trên */
+    </style>
+</head>
+<body>
+<h2>Tam giác cân ABC (CSS-only)</h2>
+<div class="triangle">
+    <span class="label A">A</span>
+    <span class="label B">B</span>
+    <span class="label C">C</span>
+</div>
+</body>
+</html>

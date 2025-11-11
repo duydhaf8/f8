@@ -1,0 +1,9 @@
+.box {
+    width: 1000px;
+    height: 1000px;
+    background-color: green;
+    background-image: url(http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQx0NWLjO6XrNa4Qv7sE-lXkX2KkMDqUu1Wpuis0PyKQKJXmm0rMWYnu9Jibb4Jh3uEiFZJ2iwG3-LfGUOuT9o);
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+    background-size: contain;
+}
