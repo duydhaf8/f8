@@ -1,0 +1,27 @@
+- thuộc tính Display
+    thay đổi cách hiêển thị của 1 thẻ html
+    các giá trị phổ biến
+* none: ẩn phần tử (mất ko gian chứa)
+* block: dạng khối (giống thẻ block bên html)
+* inline: dạng dòng (giống thẻ inline bên html)
+* inline-block: kết hợp
+
+- thuộc tính Position
+    các thành phần có position luôn nằm trên
+    Mặc định: các phần tử sẽ sắp xếp từ trên xuống dưới (block), từ trái qua phải (inline)
+    Positon: can thiệp để di chuyển các phần tử sang các vị trí khác
+    Các loại Position:
+        - static: ko có position (sắp xếp mặc định)
+        - relative: tương đối
+        - absolute: tuyệt đối, tìm thằng cha gần nhất có position ko phải static
+        - fixed: cố định (khi kéo thanh chuột)
+    Các thuộc tính:
+    - position:  static, relative, absolute, fixed
+    - top
+    - bottom
+    - left
+    - right
+    - z-index:
+    - inset
+
+*Note: overscroll-behavior: none; dùng để tránh bị scroll quá tay

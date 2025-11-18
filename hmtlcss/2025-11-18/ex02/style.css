@@ -1,0 +1,63 @@
+/*html{*/
+/*    overscroll-behavior: none;*/
+/*}*/
+
+body{
+    height: 2000px;
+}
+.box{
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 30px;
+    position: relative;
+}
+.item{
+    width: 150px;
+    height: 50px;
+    background: green;
+    color: white;
+    border: 1px solid white;
+}
+.item:nth-child(2) {
+    /*margin-top: -20px;*/
+    /*margin-left: -20px;*/
+    /*relative là tương đối với vị trí ban đầu nó đứng*/
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 250px;*/
+    /*left: calc(100% - 150px); hàm tính */
+    /*absolute là thoát khỏi bố cục ban đầu, tính theo viewport chứ ko phải theo box*/
+    /*tìm cha gần nhất có position ko phải static, ở đây là box*/
+    /*position: absolute;*/
+    /*background: red;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*các thuộc tính của fixed giống absolute, chỉ khác nó chỉ nhận body làm cha*/
+    /*position: fixed;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*background: red;*/
+    /*top: 20px;*/
+    /*left: 20px;*/
+    /*right: 20px;*/
+    /*bottom: 20px;*/
+    /*inset đại diện cho cả 4 giá trị top left right bottom*/
+    /*có thể set 1-4 giá trị*/
+    /*inset: 20px;*/
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+/*các thành phần có position luôn nằm trên, nếu cả cùng có position thì thằng nào đc khai báo sau trong HTML thì nằm trên*/
+.item:nth-child(3) {
+    position: relative;
+    z-index: 2;
+}
+/*z-index là số tự đặt, số càng lớn thì nằm trên*/
+.item:nth-child(1) {
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
