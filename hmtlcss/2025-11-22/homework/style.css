@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.msg-box{
+    background: rgba(0, 0, 0, 0.84);
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: inline-block;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.84);
+    margin-left: 10px;
+}
+.register-popup{
+    width: 450px;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin: auto;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.register-popup input {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: calc(100% - 8px);
+    margin: 4px;
+    outline-color: rgb(255, 0, 0);
+}
+.info-msg{
+    margin-left: 8px;
+    position: absolute;
+    top: -90%;
+    display: none;
+}
+.text-field{
+    position: relative;
+}
+.text-field input[type="email"]:hover ~ .info-msg{
+    display: block;
+}
+.close-btn{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.register-popup-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.course-list{
+    margin: 8px 16px;
+}
+.course-list-option{
+    margin: 8px 0;
+}
+.register-popup button{
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    cursor: pointer;
+}
