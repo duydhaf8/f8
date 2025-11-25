@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-bar img{
+    width: 38px;
+    border-radius: 5px;
+
+}
+.header-bar {
+    position: relative;
+    border-bottom: 1px solid chocolate;
+}
+.header-bar nav {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.header-bar nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+.header-bar nav a{
+    text-decoration: none;
+    color: chocolate;
+    padding: 10px;
+}
+.header-bar .header-bar-content{
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+.header-bar nav a:hover {
+    background-color: rgba(210, 105, 30, 0.8);
+    color: white;
+}
+.header-bar nav a {}
+

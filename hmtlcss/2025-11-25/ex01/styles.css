@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+.expand-panel {
+    width: 600px;
+    margin: 0 auto 12px auto; /* tạo khoảng cách */
+}
+
+/* Nội dung ẩn */
+.expand-content {
+    display: none;
+    background-color: rgba(204, 204, 204, 0.31);
+    padding: 16px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Title */
+.expand-title {
+    background-color: rgba(255, 0, 255, 0.16);
+    padding: 16px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.expand-title:hover {
+    background-color: rgba(255, 0, 255, 0.3);
+    cursor: pointer;
+}
+
+/* Icon dấu - mặc định */
+.expand-title-icon::before {
+    content: "-";
+    color: #ff00ff;
+    font-weight: bold;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+/* Icon đổi thành dấu + khi mở */
+.expand-panel input[type="checkbox"]:checked ~ label .expand-title-icon::before {
+    content: "+";
+}
+
+/* Hiện nội dung khi mở */
+.expand-panel input[type="checkbox"]:checked ~ .expand-content {
+    display: block;
+}
+
+/* Bo tròn khi mở */
+.expand-panel input[type="checkbox"]:checked ~ label .expand-title {
+    border-radius: 8px 8px 0 0;
+}
