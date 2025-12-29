@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Buttons</title>
+    <style>
+        body {
+            background-color: #0f0f0f; /* Nền tối như trong hình */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .social-container {
+            display: flex;
+            gap: 50px; /* Khoảng cách giữa các nút */
+        }
+
+        .social-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background-color: #1a1a1a; /* Màu nền của nút */
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+
+            /* Tạo các vòng tròn đồng tâm bằng box-shadow */
+            /* Cú pháp: 0 0 0 (độ dày) (màu sắc) */
+            box-shadow:
+                    0 0 0 1px rgba(204, 255, 0, 0.1),  /* Vòng sát nhất */
+                    0 0 0 12px rgba(204, 255, 0, 0.03), /* Vòng giữa */
+                    0 0 0 25px rgba(204, 255, 0, 0.01); /* Vòng ngoài cùng */
+        }
+
+        /* Định dạng Icon bên trong */
+        .social-btn img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+            /* Nếu icon của bạn là màu đen, filter này sẽ chuyển nó sang màu xanh neon */
+            filter: brightness(0) invert(85%) sepia(90%) saturate(1500%) hue-rotate(30deg);
+        }
+
+        /* Hiệu ứng khi di chuột vào (tùy chọn) */
+        .social-btn:hover {
+            transform: scale(1.05);
+            box-shadow:
+                    0 0 0 2px rgba(204, 255, 0, 0.2),
+                    0 0 0 15px rgba(204, 255, 0, 0.05),
+                    0 0 0 30px rgba(204, 255, 0, 0.02);
+        }
+    </style>
+</head>
+<body>
+<div class="social-container">
+    <button class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+    </button>
+
+    <button class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook">
+    </button>
+
+    <button class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+    </button>
+</div>
+
+</body>
+</html>
