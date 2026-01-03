@@ -1,0 +1,7 @@
+JS có 8 kiểu dữ liệu
+    - 7 kiểu dữ liệu nguyên thủy: String, Number, Boolean, Null, Undefined, BigInt, Symbol
+    - 1 kiểu dữ liệu tham chiếu: Object
+
+Đặc điểm kiểu dữ liệu nguyên thủy:
+    - ko thể thay đổi giá trị
+    - ngược lại kiểu dữ liệu tham chiếu có thể thay đổi giá trị
