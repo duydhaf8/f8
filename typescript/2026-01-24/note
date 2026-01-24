@@ -1,0 +1,16 @@
+typescript bản chất là: javascript + type
+interface Employee {
+    id: number,
+    name: string
+    salary?: number
+}
+=> ? salary có thể có hoặc ko
+nếu
+salary: number | null
+=> bắt buộc phải có, giá trị null hay số đều ok
+
+OOP:
+tính kế thừa
+tính đa hình
+tính đóng gói
+tính trù tượng
