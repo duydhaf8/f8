@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    const renderTable = () => {
+        const headers = ['code', 'customer', 'product', 'amount', 'status', 'action']
+
+        const orders = [
+            {code: 1, customer: 'Duong', product: 'laptop', amount: 50, status: '1'},
+            {code: 2, customer: 'Hoang', product: 'iphone', amount: 30, status: 'ng'},
+            {code: 3, customer: 'Anh', product: 'iphone', amount: 30, status: 'ng'},
+            {code: 4, customer: 'Duy', product: 'iphone', amount: 30, status: 'ok'}
+        ]
+
+// create table
+        const table = document.createElement('table')
+        table.border = '1'
+        table.cellSpacing = '0'
+        table.style.width = '100%'
+
+// ===== thead =====
+        const thead = document.createElement('thead')
+        const trHead = document.createElement('tr')
+
+        headers.forEach(h => {
+            const th = document.createElement('th')
+            th.textContent = h
+            trHead.append(th)
+        })
+
+        thead.append(trHead)
+        table.append(thead)
+
+// ===== tbody =====
+        const tbody = document.createElement('tbody')
+
+        orders.forEach(order => {
+            const tr = document.createElement('tr')
+
+            Object.values(order).forEach(value => {
+                const td = document.createElement('td')
+                td.textContent = value
+                tr.append(td)
+            })
+
+            const tdAction = document.createElement('td')
+            const btnEdit = document.createElement('button')
+            btnEdit.textContent = 'edit'
+            const btnDelete = document.createElement('button')
+            btnDelete.textContent = 'delete'
+
+            tdAction.append(btnEdit, btnDelete)
+            tr.append(tdAction)
+
+            tbody.append(tr)
+        })
+
+        table.append(tbody)
+        document.body.append(table)
+
+    }
+
+    renderTable()
+
+</script>
+</body>
+</html>

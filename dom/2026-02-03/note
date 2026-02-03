@@ -1,0 +1,7 @@
+1. getElementByid -> get 1
+2. getElementsByTagNem -> get many HTMLCollection
+3. getElementsByClassName -> get many HTMLCollection
+4. querySelector(<element selector>)
+
+innerHTML -> update html/text
+innerText -> update text
